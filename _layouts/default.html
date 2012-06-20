@@ -9,8 +9,8 @@
   <title>{{ page.title }}</title>
   <meta name="description" content="">
 
-  <meta name="viewport" content="width=device-width">
-  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Arvo:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/style.css">
 
   <script src="/js/libs/modernizr-2.5.3.min.js"></script>
@@ -22,10 +22,11 @@
 
     <p class="bio">
       <img class="snapshot" src="/img/jim.jpeg">
-      Web Dev<br> Teacher<br> Speaker
+      Web Dev<br> Teacher<br> Maker
     </p>
 
     <div class="links">
+      <a href="/">About Me</a>
       <a href="/blog/index.html">Blog</a>
       <a class='social' href="https://twitter.com/jimrhoskins">
         Twitter
@@ -52,20 +53,19 @@
         <header>
           <h1> {{ page.title }}</h1>
         </header>
+        {% if page.post %}
+          <div class=date>{{ page.date | date_to_string }}</div>
+        {% endif %}
         {{ content }}
-        <footer>
-          {% include comments.html %}
-        </footer>
+        {% unless page.disableComments %}
+          <footer>
+            {% include comments.html %}
+          </footer>
+        {% endunless %}
       </article>
     </div>
 
 
-
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  {% include analytics.html %}
 </body>
 </html>
