@@ -321,7 +321,7 @@ article.index {
   border: solid 1px #c8c8c8;
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 450px) {
   body > header {
     position: absolute;
   }
@@ -329,11 +329,15 @@ article.index {
 
 
 @media screen and (max-width: 480px) {
-  body { padding: 0 5px;}
+  body {
+    padding: 0 5px;
+  }
+
   body > header {
     position: relative;
     width: auto;
     border-right: none;
+    margin: 0 -5px;
   }
 
   div[role=main] {

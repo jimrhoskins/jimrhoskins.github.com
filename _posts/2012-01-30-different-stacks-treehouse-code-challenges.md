@@ -87,8 +87,7 @@ of the various dojo widgets that override certain callbacks in the
 lifecycle to serve my application needs. The suggested way of
 subclassing in dojo is the following.
 
-{% highlight coffeescript %}
-1234567890123456789012345678901234567890123456789012345678901234567890123456789
+{% highlight javascript %}
 dojo.provide('mynamespace.MyButton');
 dojo.define('mynamespace.MyButton', dijit.Button {
   postCreate: function () {
@@ -110,11 +109,11 @@ in the console or `.toString()` will match the name of you class.
 The CoffeeScript that would create a class is this, and it not only
 looks cleaner, but also addresses the scope and naming problems.
 
-``` coffeescript
+{% highlight coffeescript %}
 class MyButton extends dijit.Button
   postCreate: ->
     # widget element has been created, setup in here
-```
+{% endhighlight %}
 
 Bam! The extend keyword works without issue. Without a constructor
 defined, it will automatically call the parent's constructor when `new
@@ -123,7 +122,7 @@ constructor, I can do it very easily. Again the `super` keyword works as
 expected.
 
 
-# Node + Express + CouchDB
+## Node + Express + CouchDB
 
 [Node.js][node] powers the server with [Express][express] handling
 routes and middleware. I don't have much to say about this, it's pretty
@@ -151,7 +150,7 @@ that's it. There's no real "API" on my server, just the API of the
 database exposed through a proxy. 
 
 
-# Jade + Stylus + Handlebars
+## Jade + Stylus + Handlebars
 
 [Jade][jade] and [Handlebars][handlebars] are templating languages. They
 actually didn't get much use in this project since the interface is
@@ -165,7 +164,7 @@ have been silly. Both are great.
 [SASS][sass], but with an even more minimalistic syntax. It works quite
 well. 
 
-# Final Thoughts
+## Final Thoughts
 
 Overall I am pretty satisfied with this stack. It has been one of the
 most organized front-end project I have had the chance to work on.

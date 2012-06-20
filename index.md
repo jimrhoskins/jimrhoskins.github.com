@@ -22,7 +22,7 @@ London][fowa] , [ConvergeSE][converge], & [Made by Few][MxF].
 ## Projects
 
 ### Code Racer
-![Code Racer Logo](http://jimhoskins.com/images/coderacer-small.png)
+![Code Racer Logo](/img/coderacer-small.png)
 [Code Racer][coderacer] is a multiplayer web coding game built by the team at
 Treehouse in 4 days. It was built with Node, Spine, Socket.io and
 CoffeeScript. I managed the client server interaction that managed the
