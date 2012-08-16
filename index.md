@@ -4,6 +4,7 @@ title: "Developer - Teacher - Maker"
 disableComments: true
 ---
 
+
 ## I Love to Teach
 I love web development, and I love to share my knowledge with everybody.
 I get to teach full time at [Treehouse][treehouse] as well as write for [Think Vitamin][thinkvitamin]
