@@ -177,14 +177,21 @@ div.highlight pre .il { color: #666666 } /* Literal.Number.Integer.Long */
 
 body > header {
   position: fixed;
-  background: #e8e8e8;
+  background: #fff;
   color: #444;
-  border-right: solid 1px #AAA;
+  border-right: solid 1px #DDD;
   text-shadow: 0 1px 0 #FFF;
   top: 0;
   width: 200px;
   padding: 10px;
   height: 100%;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease-in-out;
+}
+
+
+body > header:hover {
+  opacity: 1.0;
 }
 
 a.brand {
@@ -206,9 +213,9 @@ img.snapshot {
 }
 
 .bio {
-  font-weight: bold;
   font-size: 20px;
   line-height: 32px;
+  color: #445;
 }
 
 div[role="main"] {
@@ -227,17 +234,17 @@ div[role="main"] {
 .links {
   margin: 0 -10px;
   clear: both;
-  border-top: solid 1px #AAA;
+  border-top: solid 1px #DDD;
 }
 
 
 .links a {
   display: block;
-  background: #d8d8d8;
+  background: #FFF;
   color: #000;
   padding: 10px;
   text-decoration: none;
-  border-bottom: solid 1px #AAA;
+  border-bottom: solid 1px #DDD;
 }
 
 .links a:hover,
@@ -293,6 +300,7 @@ article.index {
 .index h2 {
   font-size: 20px;
   margin: 0;
+  border-bottom: 0;
 }
 
 .index .meta a,
@@ -305,6 +313,11 @@ article.index {
 .index h2 a {
   color: #333;
 }
+
+h2 {
+  border-bottom: solid 1px #DDD;
+}
+
 
 
 
