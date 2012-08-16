@@ -190,6 +190,9 @@ body > header {
 }
 
 
+article img {
+  max-width: 100%;
+}
 body > header:hover {
   opacity: 1.0;
 }
