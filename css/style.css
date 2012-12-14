@@ -399,3 +399,13 @@ h2 {
 
 
 }
+
+code {
+  color: #F55;
+  border: solid 1px #DDD;
+}
+
+pre code {
+  color: #333;
+  border: none;
+}
