@@ -106,7 +106,7 @@ in fact you can't. Calling $apply inside $apply will throw an error.
 You do need to use it if you are going to run code in a new turn. And
 only if that turn isn't being created from a method in the AngularJS
 library.
-Inside that new turn, you should wrap your code in `$scope.apply()`.
+Inside that new turn, you should wrap your code in `$scope.$apply()`.
 Here is an example. We are using `setTimeout`, which will execute a
 function in a new turn after a delay. Since Angular doesn't know about
 that new turn, the update will not be reflected.
@@ -131,7 +131,7 @@ If you write any code that uses Ajax without `$http`, or listens for
 events without using Angular's `ng-*` listeners, or sets a timeout
 without `$timeout`, you should wrap your code in `$scope.$apply`
 
-## $scope.$apply() vs $scope.apply(fn)
+## $scope.$apply() vs $scope.$apply(fn)
 
 Sometimes I see examples where data is updated, and then
 `$scope.$apply()` is called with no arguments. This achieves the desired
