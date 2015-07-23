@@ -73,8 +73,8 @@ not property assignments. Then changes can then be noted, and the page can be
 updated. This has the downside in that we must extend some special
 object. Also, for assigning, we must use a more verbose form
 `obj.set('key', 'value')` instead of  `obj.key = 'value'`. Frameworks
-like [EmberJS](http://emberjs.org) and
-[KnockoutJS](http://knockoutjs.org) use this strategy.
+like [EmberJS](http://emberjs.com) and
+[KnockoutJS](http://knockoutjs.com) use this strategy.
 
 AngularJS takes a different approach: allow any value to be used as
 a binding target. Then at the end of any JavaScript code turn, check to
